@@ -31,16 +31,16 @@ svg {
   background-color: rgb(167, 66, 57);
 }
 .snare-pad {
-  background-color: rgb(253, 119, 41);
+  background-color: rgb(246, 160, 110);
 }
 .hihat-pad {
-  background-color: rgb(255, 193, 59);
+  background-color: rgb(243, 205, 124);
 }
 .pad {
   transition: all 0.5s ease;
 }
 .kick-pad.active {
-  background-color: rgb(66, 4, 4);
+  background-color: rgb(93, 2, 2);
 }
 .snare-pad.active {
   background-color: rgb(255, 60, 0);
@@ -94,4 +94,12 @@ svg {
 select {
   padding: 1rem;
   margin-left: 1rem;
+}
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }

@@ -95,6 +95,9 @@ select {
   padding: 1rem;
   margin-left: 1rem;
 }
+btn.mute.active {
+  background-color: lightgrey;
+}
 @keyframes playTrack {
   from {
     transform: scale(1);

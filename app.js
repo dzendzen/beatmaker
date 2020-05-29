@@ -3,11 +3,11 @@ class DrumKit {
     this.pads = document.querySelectorAll(".pad");
     this.playBtn = document.querySelector(".play");
 
-    this.currentKick = "./sounds/kick-808.mp3";
-    this.currentSnare = "./sounds/snare-acoustic01.mp3";
-    this.currentHihat = "./sounds/hihat-808.mp3";
-    this.currentPerc = "./sounds/perc-808.mp3";
-    this.currentTom = "./sounds/tom-808.mp3";
+    this.currentKick = "./sounds/kick/kick-808.mp3";
+    this.currentSnare = "./sounds/snare/snare-acoustic01.mp3";
+    this.currentHihat = "./sounds/hihat/hihat-808.mp3";
+    this.currentPerc = "./sounds/perc/perc-808.mp3";
+    this.currentTom = "./sounds/tom/tom-808.mp3";
 
     this.kickAudio = document.querySelector(".kick-sound");
     this.snareAudio = document.querySelector(".snare-sound");

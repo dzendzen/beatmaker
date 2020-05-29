@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="sequencer">
+
       <div class="kick-track">
         <div class="controls">
           <h1>Kick</h1>
@@ -88,7 +89,7 @@
       <div class="hihat-track">
         <div class="controls">
           <h1>Hihat</h1>
-          <button data-track="2" hihatclass="mute hihat-volume">
+          <button data-track="2" class="mute hihat-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
           <select name="hihat-select" id="hihat-select">
@@ -118,12 +119,52 @@
           <div class="pad hihat-pad b6"></div>
           <div class="pad hihat-pad b7"></div>
         </div>
-  </div>
+  
+
+  <div class="perc-track">
+    <div class="controls">
+      <h1>Percussions</h1>
+      <button data-track="3" class="mute perc-volume">
+        <i class="fas fa-volume-mute"></i>
+      </button>
+      <select name="perc-select" id="perc-select">
+        <option value="./sounds/perc-808.mp3">808 </option>
+        <option value="./sounds/perc-chirpy.mp3">Chirpy</option>
+        <option value="./sounds/perc-hollow.mp3">Hollow</option>
+        <option value="./sounds/perc-laser.mp3">Laser</option>
+        <option value="./sounds/perc-metal.mp3">Metal</option>
+        <option value="./sounds/perc-nasty.mp3">Nasty</option>
+        <option value="./sounds/perc-short.mp3">Short</option>
+        <option value="./sounds/perc-tambo.mp3">Tambo</option>
+        <option value="./sounds/perc-tribal.mp3">Tribal</option>
+        <option value="./sounds/perc-weirdo.mp3">Weirdo</option>             
+      
+      </select>
     </div>
-    <button class="play">Play</button>
+    <div class="perc">
+      <div class="pad perc-pad b0"></div>
+      <div class="pad perc-pad b1"></div>
+      <div class="pad perc-pad b2"></div>
+      <div class="pad perc-pad b3"></div>
+      <div class="pad perc-pad b4"></div>
+      <div class="pad perc-pad b5"></div>
+      <div class="pad perc-pad b6"></div>
+      <div class="pad perc-pad b7"></div>
+    </div>
+</div>
+</div>  
+  </div>
+  <button class="play">Play</button>
+  <div class="tempo">
+    <input type="range" class="tempo-slider" max="300"min="20" value="150" />
+    <p>Tempo: <span class="tempo-nr">150</span></p>
+    </div>
+  
+
     <audio class="kick-sound" src="./sounds/kick-808.mp3"></audio>
     <audio class="snare-sound" src="./sounds/snare-acoustic01.mp3"></audio>
     <audio class="hihat-sound" src="./sounds/hihat-acoustic01.mp3"></audio>
+    <audio class="perc-sound" src="./sounds/perc-808.mp3"></audio>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
       integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="

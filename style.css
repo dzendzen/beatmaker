@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/*******
+TODO
+ADD VARIABLES:
+ --border-radius:5px;
+ --dark-grey:rgb(153, 136, 136);
+ ADD SCSS:
+ @mixin display-center{
+   display:flex;
+   align-items:center;
+   justify-content:center;}
+ ******/
 body {
   font-family: sans-serif;
 }
@@ -21,11 +33,13 @@ svg {
 }
 .kick-pad,
 .snare-pad,
-.hihat-pad {
+.hihat-pad,
+.perc-pad {
   width: 5rem;
   height: 5rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
+  border-radius: 5px;
 }
 .kick-pad {
   background-color: rgb(167, 66, 57);
@@ -35,6 +49,9 @@ svg {
 }
 .hihat-pad {
   background-color: rgb(243, 205, 124);
+}
+.perc-pad {
+  background-color: rgb(248, 248, 127);
 }
 .pad {
   transition: all 0.5s ease;
@@ -48,19 +65,24 @@ svg {
 .hihat-pad.active {
   background-color: rgb(255, 145, 0);
 }
+.perc-pad.active {
+  background-color: rgb(248, 248, 3);
+}
 .kick-track,
 .snare-track,
-.hihat-track {
+.hihat-track,
+.perc-track {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
+  width: 70%;
   justify-content: space-between;
   margin-top: 5rem;
 }
 .kick,
 .snare,
-.hihat {
+.hihat,
+.perc {
   display: flex;
 }
 .controls {
@@ -95,8 +117,27 @@ select {
   padding: 1rem;
   margin-left: 1rem;
 }
-btn.mute.active {
-  background-color: lightgrey;
+.mute.active {
+  background-color: rgb(226, 223, 223);
+}
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background-color: rgb(153, 136, 136);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
 }
 @keyframes playTrack {
   from {

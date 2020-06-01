@@ -1,3 +1,12 @@
+const mode = document.querySelector(".mode");
+const body = document.querySelector("body");
+mode.addEventListener("click", (e) => {
+  mode.classList.add("active");
+  body.style.backgroundColor = "rgb(233 233 233)";
+  body.style.color = "rgb(51 51 51)";
+  mode.style.backgroundColor = "rgb(51 51 51)";
+  mode.style.color = "rgb(233 233 233)";
+});
 class DrumKit {
   constructor() {
     this.pads = document.querySelectorAll(".pad");

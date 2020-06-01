@@ -25,6 +25,21 @@ i,
 svg {
   pointer-events: none;
 }
+.mode {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem 2rem 0 0;
+  background: black;
+  color: white;
+}
+.mode.active {
+  background: white;
+  color: black;
+}
 h1 {
   margin-top: 5vh;
   text-align: center;

@@ -1,12 +1,20 @@
 const mode = document.querySelector(".mode");
 const body = document.querySelector("body");
+//****TODO*******//
+//**reset btn(= .mode) so u can click back to dark mode**//
+
 mode.addEventListener("click", (e) => {
   mode.classList.add("active");
-  body.style.backgroundColor = "rgb(233 233 233)";
+  body.style.backgroundColor = "rgb(240 234 223)";
   body.style.color = "rgb(51 51 51)";
   mode.style.backgroundColor = "rgb(51 51 51)";
   mode.style.color = "rgb(233 233 233)";
+  mode.innerText = "Dark mode";
+  console.log(mode);
+  mode.classList.remove("active");
+  console.log(mode);
 });
+
 class DrumKit {
   constructor() {
     this.pads = document.querySelectorAll(".pad");

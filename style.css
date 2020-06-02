@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/*******
-TODO
-ADD VARIABLES:
+/*******TODO**********
+
+**ADD VARIABLES:
  --border-radius:5px;
  --dark-grey:rgb(153, 136, 136);
  ADD SCSS:
@@ -14,6 +14,7 @@ ADD VARIABLES:
    display:flex;
    align-items:center;
    justify-content:center;}
+**ADD box-shadow on pads 
  ******/
 body {
   font-family: sans-serif;
@@ -61,7 +62,7 @@ h1 {
   height: 5rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 1.5rem;
 }
 .kick-pad {
   background-color: rgb(167, 66, 57);
@@ -81,20 +82,26 @@ h1 {
 .pad {
   transition: all 0.5s ease;
 }
+
 .kick-pad.active {
   background-color: rgb(93, 2, 2);
+  background: linear-gradient(145deg, rgb(182, 69, 69), rgb(93, 2, 2));
 }
 .snare-pad.active {
   background-color: rgb(255, 60, 0);
+  background: linear-gradient(145deg, rgb(255, 141, 106), rgb(255, 60, 0));
 }
 .hihat-pad.active {
   background-color: rgb(255, 145, 0);
+  background: linear-gradient(145deg, rgb(243, 200, 143), rgb(255, 145, 0));
 }
 .perc-pad.active {
   background-color: rgb(248, 248, 3);
+  background: linear-gradient(145deg, rgb(243, 243, 165), rgb(248, 248, 3));
 }
 .tom-pad.active {
   background-color: rgb(172, 251, 14);
+  background: linear-gradient(145deg, rgb(209, 247, 135), rgb(169, 251, 4));
 }
 .kick-track,
 .snare-track,

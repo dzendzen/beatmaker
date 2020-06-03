@@ -4,15 +4,21 @@ const body = document.querySelector("body");
 //**reset btn(= .mode) so u can click back to dark mode**//
 
 mode.addEventListener("click", (e) => {
-  mode.classList.add("active");
-  body.style.backgroundColor = "rgb(240 234 223)";
-  body.style.color = "rgb(51 51 51)";
-  mode.style.backgroundColor = "rgb(51 51 51)";
-  mode.style.color = "rgb(233 233 233)";
-  mode.innerText = "Dark mode";
-  console.log(mode);
-  mode.classList.remove("active");
-  console.log(mode);
+  if (mode.classList.contains("active")) {
+    body.style.backgroundColor = "rgb(240 234 223)";
+    body.style.color = "rgb(51 51 51)";
+    mode.style.backgroundColor = "rgb(51 51 51)";
+    mode.style.color = "rgb(233 233 233)";
+    mode.innerText = "Dark mode";
+    //console.log(mode);
+    mode.classList.remove("active");
+  } else {
+    mode.classList.add("active");
+    body.style.backgroundColor = "";
+    body.style.color = "";
+    mode.innerText = "Light mode";
+  }
+  // // console.log(mode);
 });
 
 class DrumKit {
